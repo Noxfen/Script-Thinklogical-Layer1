@@ -1,0 +1,141 @@
+<h2>Scopo e destinatari</h2>
+
+<p>TLX Control collega fra loro le porte di una matrice in fibra Thinklogical TLX: il video di
+un PC verso un monitor, la tastiera del monitor verso quel PC, un codec verso un tablet. Prende
+il posto della vecchia pagina web che si apriva nel browser.</p>
+
+<p>Questo manuale è per chi lo usa in sala. Non serve sapere cos'è una matrice, né aprire un
+terminale: si apre la finestra e si clicca. Le due schermate che si vedono all'inizio,
+<b>Preset</b> e <b>Postazioni</b>, bastano per il lavoro di tutti i giorni; tutto il resto è
+nascosto dietro la «Modalità tecnico» e lo usa chi fa assistenza.</p>
+
+<div class="nota"><b>Una cosa da sapere prima di cominciare</b> Il programma non si fida di sé
+stesso: dopo ogni commutazione rilegge la matrice e confronta quello che ha trovato con quello
+che voleva ottenere. Quando dice «fatto», il collegamento c'è davvero. Quando non può
+verificarlo, lo scrive.</div>
+
+<h2>Aprire il programma</h2>
+
+<p>Doppio clic sull'icona di TLX&nbsp;Control. La finestra si apre e il programma si collega da
+solo all'ultima matrice usata: non c'è niente da avviare prima, nessun browser da aprire.</p>
+
+<p>In alto a sinistra c'è il nome della matrice in uso. Se le matrici sono più di una, da lì si
+cambia: il programma si scollega dalla precedente e si collega a quella scelta.</p>
+
+<p>Accanto al nome c'è lo stato del collegamento:</p>
+
+<table>
+<tr><th>Cosa si legge</th><th>Cosa vuol dire</th></tr>
+<tr><td><b>Connesso</b></td><td>La matrice risponde. Si può lavorare.</td></tr>
+<tr><td><b>Connessione…</b> o <b>Riconnessione…</b></td><td>Il programma sta provando. Non serve fare niente: riprova da solo, all'infinito, senza bloccare la finestra.</td></tr>
+<tr><td><b>Non connesso</b></td><td>La matrice non risponde. I comandi vengono rifiutati subito invece di restare appesi.</td></tr>
+</table>
+
+<p>A destra dello stato c'è da quanto tempo è aggiornato quello che vedi («aggiornato 4 s fa»).
+Se quel numero cresce oltre il minuto, lo stato a schermo potrebbe non essere più quello vero:
+il pulsante di aggiornamento lo rilegge subito.</p>
+
+<p><b>Chiudendo la finestra si chiude tutto</b>: il programma saluta la matrice e termina. Non
+resta niente in esecuzione.</p>
+
+<h2>Preset: collegare con un clic</h2>
+
+<p>Un preset è un collegamento già pronto, con il suo nome — «Codec 1 ↔ Tablet A». La schermata
+Preset li mostra tutti; un clic sul preset e la commutazione parte.</p>
+
+<p>Quello che succede dopo il clic, in ordine:</p>
+
+<ul class="check">
+<li>il programma rilegge la matrice, per sapere da dove parte;</li>
+<li>prepara i comandi e controlla che non tocchino porte bloccate;</li>
+<li>li manda, fermandosi al primo che la matrice rifiuta;</li>
+<li>aspetta il tempo di spegnimento delle uscite e rilegge tutto;</li>
+<li>dice se il collegamento c'è davvero.</li>
+</ul>
+
+<p>Il preset attivo in quel momento resta evidenziato, così si vede a colpo d'occhio come è
+messa la sala.</p>
+
+<div class="attenzione"><b>Attenzione</b> Un preset «bidirezionale» è <b>esclusivo</b>: stacca
+le due porte da qualunque altra uscita prima di collegarle fra loro. È giusto per una coppia
+codec ↔ tablet, ma se un monitor stava guardando una di quelle due porte, si spegne. Il
+programma lo scrive fra gli avvisi dopo la commutazione.</div>
+
+<h3>Creare un preset</h3>
+
+<p>Con <b>Nuovo preset</b> si sceglie il nome e le porte. Con <b>Salva situazione attuale</b> il
+programma legge come è messa adesso la matrice e ne fa un preset: è il modo più comodo di
+congelare una configurazione che funziona, dopo averla trovata a mano.</p>
+
+<p>Un preset salvato così è una <b>situazione completa</b>: rimetterlo in funzione ripristina
+tutta la matrice, non solo le porte elencate. Le uscite che non compaiono vengono spente, quelle
+bloccate restano come sono. Il preset lo dichiara con la sua etichetta, perché la differenza
+conta: uno collega due porte, l'altro rifà la sala.</p>
+
+<h3>Annullare</h3>
+
+<p>Il pulsante <b>Annulla</b> in alto a destra (o <code>Ctrl+Z</code>) rimette le uscite toccate
+dall'ultima operazione come stavano prima. Funziona solo se nel frattempo nessun altro le ha
+cambiate: se le trova diverse si rifiuta, invece di sovrascrivere il lavoro di qualcun altro.</p>
+
+<h2>Postazioni: scegliere cosa si vede</h2>
+
+<p>La schermata <b>Postazioni</b> serve quando non c'è un preset pronto. A sinistra ci sono le
+postazioni (il monitor con la tastiera), a destra le sorgenti (i PC). Si clicca prima la
+postazione, poi la sorgente, e si conferma con <b>Esegui</b> o con <code>Invio</code>.</p>
+
+<p>Fino alla conferma non viene mandato niente alla matrice: quello che si è scelto resta in
+attesa e si può cambiare idea.</p>
+
+<p>Il collegamento di una postazione porta anche la tastiera e il mouse verso il PC scelto, e
+<b>non</b> stacca gli altri monitor che guardano lo stesso PC: è la differenza con il preset
+bidirezionale.</p>
+
+<div class="pericolo"><b>Pericolo</b> Se la stessa postazione viene collegata a due PC diversi,
+la sua tastiera finisce per comandarli entrambi. Il programma se ne accorge e lo scrive fra gli
+avvisi: quando leggi «tastiera su più PC», fermati e rifai il collegamento, perché chi digita
+non ha modo di capire su quale macchina sta scrivendo.</div>
+
+<h2>Quando qualcosa non torna</h2>
+
+<table>
+<tr><th>Cosa si vede</th><th>Cosa fare</th></tr>
+<tr><td>«Non connesso» e non torna</td><td>Controlla che il PC sia sulla rete di comando e che in alto sia selezionata la matrice giusta. Il programma riprova da solo: non serve chiuderlo e riaprirlo.</td></tr>
+<tr><td>Lo schermo resta nero per un attimo dopo la commutazione</td><td>È normale: la matrice tiene spenta l'uscita per qualche decimo di secondo prima di riaccenderla sulla sorgente nuova.</td></tr>
+<tr><td>Lo schermo resta nero e basta</td><td>Premi il pulsante di aggiornamento e guarda se il collegamento risulta fatto. Se risulta fatto ma non si vede niente, il problema è a valle della matrice: cavo, monitor, sorgente spenta.</td></tr>
+<tr><td>«Comando rifiutato dalla matrice»</td><td>La matrice ha detto no. Il numero <code>ERnnnn</code> accanto dice perché; il più comune è una porta che non esiste su quella matrice. Niente è stato cambiato a metà: il programma si ferma al primo rifiuto.</td></tr>
+<tr><td>«Il preset appartiene a un'altra matrice»</td><td>Il preset è stato creato su una matrice diversa da quella in uso. Cambia matrice in alto, oppure rifai il preset su questa.</td></tr>
+<tr><td>«Non è stato possibile verificare»</td><td>I comandi sono partiti ma la rilettura non è tornata. Non dare per scontato né che sia andata né che non sia andata: aggiorna lo stato e guarda.</td></tr>
+<tr><td>Un'uscita non si lascia toccare</td><td>È bloccata: qualcuno l'ha protetta apposta perché non venisse commutata per sbaglio. Il blocco si toglie dalla schermata Porte, in modalità tecnico.</td></tr>
+</table>
+
+<p>Prima di chiamare l'assistenza, apri il <b>Registro eventi</b> (modalità tecnico) e usa
+<b>Esporta CSV</b> oppure <b>Copia righe</b>: è l'elenco esatto di cosa è stato mandato alla
+matrice e di cosa ha risposto, ed è la prima cosa che serve per capire.</p>
+
+<h2>Modalità tecnico</h2>
+
+<p>Si accende da <b>Impostazioni</b> e aggiunge quattro schermate a chi fa assistenza:</p>
+
+<table>
+<tr><th>Schermata</th><th>A cosa serve</th></tr>
+<tr><td>Matrice</td><td>La griglia di tutti gli incroci: si preparano più modifiche e si mandano insieme.</td></tr>
+<tr><td>Porte</td><td>Nomi, gruppi e blocco delle porte. I nomi che si danno qui sono quelli che l'operatore legge ovunque.</td></tr>
+<tr><td>Diagnostica</td><td>Allarmi, perdita di segnale e potenza ottica porta per porta. Serve a distinguere un cavo staccato da un ricetrasmettitore guasto.</td></tr>
+<tr><td>Console</td><td>Invio diretto dei comandi della matrice. Da usare solo sapendo cosa si sta mandando.</td></tr>
+</table>
+
+<div class="pericolo"><b>Pericolo</b> Alcuni comandi agiscono su <b>tutte</b> le porte insieme e
+spengono l'intera sala: la console li riconosce, li segnala prima dell'invio e chiede di
+riscrivere il comando per conferma. Lo stesso vale per «Scollega tutto», che chiede di scrivere
+<code>SCOLLEGA</code>. Se stai per farlo durante una riunione, non farlo.</div>
+
+<h2>Dove restano le impostazioni</h2>
+
+<p>Matrici, preset, nomi delle porte e preferenze stanno in un file sul computer, in
+<code>%APPDATA%\it.tt-group.tlx-control\config.json</code>. Da <b>Impostazioni</b> si può
+esportare per travasarlo su un altro PC, e reimportare. L'importazione <b>sostituisce</b> tutto
+quello che c'è.</p>
+
+<p>Da lì si importano anche i preset del vecchio programma, dal suo file
+<code>tlx_presets.json</code>.</p>

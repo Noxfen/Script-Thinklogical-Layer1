@@ -72,6 +72,9 @@ cargo run -p tlx-sim -- --ports 24         # matrice finta su 0.0.0.0:17567
 Per provare l'interfaccia senza backend: `npm --prefix ui run dev` e aprire
 `http://localhost:1420` (backend simulato in JavaScript; `?ports=160` per una matrice grande).
 
+Il manuale per l'operatore è in `docs/Manuale TLX Control_v1.0.pdf` (e `.html`); i sorgenti da
+cui viene generato, con il generatore tt group, stanno in `docs/manuale/`.
+
 Gli eseguibili già compilati per Windows stanno in `release/v2.0/` (cartella fuori da git),
 con le note di consegna in `release/v2.0/NOTE.md`.
 
