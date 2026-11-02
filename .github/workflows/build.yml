@@ -6,7 +6,7 @@ name: build
 
 on:
   push:
-    branches: [main, refactor-rust]
+    branches: [main]
     tags: ['v*']
   pull_request:
   workflow_dispatch:
