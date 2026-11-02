@@ -75,8 +75,10 @@ Per provare l'interfaccia senza backend: `npm --prefix ui run dev` e aprire
 Il manuale per l'operatore è in `docs/Manuale TLX Control_v1.0.pdf` (e `.html`); i sorgenti da
 cui viene generato, con il generatore tt group, stanno in `docs/manuale/`.
 
-Gli eseguibili già compilati per Windows stanno in `release/v2.0/` (cartella fuori da git),
-con le note di consegna in `release/v2.0/NOTE.md`.
+Gli eseguibili già compilati stanno in `release/v2.0/` (cartella fuori da git): installer e
+versione portatile per Windows, il simulatore, e in `macos/` il `.dmg` universale preso dagli
+artefatti della CI. Le note di consegna, con ciò che non è stato provato, sono in
+`release/v2.0/NOTE.md`.
 
 **Build automatiche**: `.github/workflows/build.yml` compila Windows (x64) e macOS (universale)
 a ogni push; gli installer si scaricano dagli *Artifacts* della run. Con un tag `v2.0` crea una
