@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M41,41v168h168V41H41ZM195.89,195.89H54.11V54.11h141.79v141.79ZM88.66,101.77h-11.91v-25.02h96.51v25.02h-11.91v71.49h-25.02v-71.49h-22.64v71.49h-25.02v-71.49Z"/>
+</svg>

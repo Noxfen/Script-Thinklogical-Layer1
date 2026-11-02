@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Codec 1 ↔ Tablet A",
+    "portA": 1,
+    "portB": 5
+  },
+  {
+    "name": "Codec 1 ↔ Tablet B",
+    "portA": 1,
+    "portB": 8
+  },
+  {
+    "name": "Codec 2 ↔ Tablet A",
+    "portA": 4,
+    "portB": 5
+  },
+  {
+    "name": "Codec 2 ↔ Tablet B",
+    "portA": 4,
+    "portB": 8
+  }
+]

@@ -1,0 +1,5 @@
+# Stile del workspace: righe fino a 100 colonne e letterali di struct compatti, come il
+# codice scritto a mano. Senza questo file rustfmt usa 80 colonne e spezza su più righe
+# anche `SimConfig { ports: n, ..Default::default() }`, riformattando ogni file che si tocca.
+max_width = 100
+use_small_heuristics = "Max"

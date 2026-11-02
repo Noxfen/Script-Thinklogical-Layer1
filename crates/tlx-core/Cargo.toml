@@ -1,0 +1,17 @@
+[package]
+name = "tlx-core"
+version.workspace = true
+edition.workspace = true
+description = "Protocollo ASCII Thinklogical TLX: parser, trasporti TCP/RS-232, sessione, UDP 17564, simulatore"
+
+[dependencies]
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tokio-serial = { version = "5", default-features = false }
+socket2 = { version = "0.5", features = ["all"] }
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util"] }

@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = ["crates/tlx-core", "crates/tlx-sim", "src-tauri"]
+
+[workspace.package]
+version = "2.0.0"
+edition = "2021"
+authors = ["TT Group SRL"]
+license = "Proprietary"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "io-util", "time", "sync"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tracing = "0.1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true
+# `unwind` e non `abort`: il client sorveglia il proprio task attore e, se muore, lo riavvia
+# segnalando il guasto nel log. Con `abort` un panic in qualunque task chiuderebbe l'intera
+# finestra durante una riunione, e la sorveglianza non servirebbe a niente.
+panic = "unwind"

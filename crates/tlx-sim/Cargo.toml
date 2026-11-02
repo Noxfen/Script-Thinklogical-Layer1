@@ -1,0 +1,9 @@
+[package]
+name = "tlx-sim"
+version.workspace = true
+edition.workspace = true
+description = "Simulatore di matrice Thinklogical TLX (API ASCII su TCP + broadcast UDP 17564)"
+
+[dependencies]
+tlx-core = { path = "../tlx-core" }
+tokio = { workspace = true, features = ["signal"] }

@@ -1,6 +1,18 @@
+# Rust / Tauri
+target/
+src-tauri/gen/
+# UI
+ui/node_modules/
+ui/dist/
+# dati locali
 tlx_presets.json
 __pycache__/
 *.pyc
 *.pyo
 .env
 .claude/
+HANDOFF/
+
+# eseguibili consegnati (fuori da git)
+release/
+.vscode/
