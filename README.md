@@ -75,7 +75,9 @@ Per provare l'interfaccia senza backend: `npm --prefix ui run dev` e aprire
 Gli eseguibili già compilati per Windows stanno in `release/v2.0/` (cartella fuori da git),
 con le note di consegna in `release/v2.0/NOTE.md`.
 
-**Build automatiche**: `.github/workflows/build.yml` compila Windows (x64) e macOS (universale)
+**Build automatiche** (il file esiste ma non è ancora nel repo: serve `gh auth refresh -h
+github.com -s workflow` e poi un commit, perché il token non ha lo scope `workflow`):
+`.github/workflows/build.yml` compila Windows (x64) e macOS (universale)
 a ogni push; gli installer si scaricano dagli *Artifacts* della run. Con un tag `v2.0` crea una
 release in bozza.
 

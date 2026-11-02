@@ -30,7 +30,8 @@ cargo run -p tlx-sim -- --ports 24 --listen 0.0.0.0:17567   # fake matrix
 - `src-tauri` (package `tlx-control`) has its own unit tests in `plan.rs` and `config.rs`. `cargo test --workspace` and `cargo clippy --workspace --all-targets -- -D warnings` are both clean (71 tests: 47 `tlx-core` unit, 7 `tlx-core` integration against the simulator, 3 `tlx-sim` CLI, 14 `src-tauri`), and CI runs both.
 - `.github/workflows/build.yml`: job `test` (Linux: the cargo test and clippy above, `npm run check`, `npm run build`), then job `bundle` (Windows x64, macOS universal). A `v*` tag creates a draft release.
 - `cargo fmt --check` is part of CI. `rustfmt.toml` sets `max_width = 100` and `use_small_heuristics = "Max"` to match the hand-written style; without it rustfmt defaults to 80 columns and reformats every file it touches.
-- `HANDOFF/`, `release/` and `.claude/` are git-ignored. `HANDOFF/wip/` is a stale copy of the source tree left over from the rewrite: do not edit it, and exclude it from searches. `release/` is where the built executables are handed over.
+- `.github/workflows/build.yml` exists in the working tree but is **not committed yet**: the GitHub token on this machine has no `workflow` scope, so a push carrying it is rejected. Until someone runs `gh auth refresh -h github.com -s workflow` and commits it, there is no CI and no macOS build.
+- `HANDOFF/`, `release/`, `.vscode/` and `.claude/` are git-ignored. `HANDOFF/wip/` is a stale copy of the source tree left over from the rewrite: do not edit it, and exclude it from searches. `release/` is where the built executables are handed over.
 
 ## Architecture
 
